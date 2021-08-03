@@ -23,6 +23,8 @@ public class userInput {
 		System.out.print("Hello " + name + " You Are " + age + " Years Old , And Your Favorite Food Is " + favFood);
 		
 		
+		scanner.close();
+		
 	}
 	
 	
