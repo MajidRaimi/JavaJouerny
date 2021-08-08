@@ -19,7 +19,8 @@ public class Main {
 		//String result = name.replace("M" , "P") ; Pedo
 		
 		
-		//System.out.println(result);
+
+		System.out.println(result);
 		
 	}
 	
