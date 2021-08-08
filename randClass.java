@@ -1,16 +1,22 @@
-import java.util.Random;
+import java.util.Random ;
 
 public class randClass {
+	
 	public static void main(String [] args) {
 		
 		Random random = new Random() ; 
+
 		
 		
-		int x = random.nextInt(5) + 1 ; 
+		for(int i = 0 ; i < 10 ; i++) {
+			int x = random.nextInt(10) + 1 ; 
+			
+			System.out.println("Random Number : " + x );
 		
-		System.out.println(x);
-		
-		
-		
+			
+			
+		}
+				
 	}
+	
 }
