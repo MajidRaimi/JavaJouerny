@@ -1,10 +1,9 @@
 
-import java.util.Scanner ; 
 
 public class TwoDArray {
 	public static void main(String[] args) {
 		 
-		Scanner scanner = new Scanner(System.in) ; 
+
 		
 		
 		//String[][] names = new String[row][col] ; 
