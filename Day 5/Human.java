@@ -1,7 +1,7 @@
 public class Human {
     
 
-    String name ; 
+    String name = "Khalid" ; 
     int age ; 
     double height ; 
 

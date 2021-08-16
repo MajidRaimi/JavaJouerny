@@ -18,6 +18,13 @@ public class Car {
         System.out.println("You Stopped The Car");
     }
  
+    // OverRide toString()
+    public String toString(){
+        return this.name  + "\n" + this.model + "\n" + this.color + "\n" + this.price + "\n" + this.year ; 
+    }    
+
+
+
  
  }
  
