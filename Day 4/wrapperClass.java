@@ -8,6 +8,11 @@ public class wrapperClass {
         String e = "Medo" ; 
         
 
+        int x ; 
+        Integer y ; 
+
+
+
         if(e == "Medo"){
             System.out.println("This Is True");
         }
