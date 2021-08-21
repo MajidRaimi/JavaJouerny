@@ -2,7 +2,7 @@ package Main;
 import java.io.* ;
 import java.util.ArrayList;
 import java.util.Scanner; 
-
+import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {
 
@@ -40,15 +40,17 @@ public class Main {
             
         }
 
-
-
-        System.out.print("Please Enter Your Username : ");
-        String usernameInput = scanner.next() ; 
-        System.out.print("Please Enter Your Password : ");
-        String passwordInput = scanner.next() ; 
-
-
         int loginIndex = -1 ; 
+
+        while(loginIndex == -1){
+            
+        //System.out.print("Please Enter Your Username : ");
+        String usernameInput = JOptionPane.showInputDialog("Please Enter Your Username : ") ; 
+        //System.out.print("Please Enter Your Password : ");
+        String passwordInput = JOptionPane.showInputDialog("Please Enter Your Password : ") ;
+
+
+        
         for(int i = 0 ; i < userList.size() ; i++){
 
             
@@ -63,12 +65,16 @@ public class Main {
         }
 
         if(loginIndex >= 0 ){
-            System.out.println(userList.get(loginIndex).toString());
+            
+            JOptionPane.showMessageDialog(null, userList.get(loginIndex).toString());
         } 
         else {
-            System.out.println("Wrong Input Please Try Again Later");
+            JOptionPane.showMessageDialog(null, "Wrong Input Please Try Again Later");
         }
 
+
+
+        }
 
 
     }
