@@ -15,7 +15,7 @@ public class Main {
         ImageIcon image = new ImageIcon("codingImage.png");
 
         Color textColor = new Color(0xFF4527A0); // Create Color
-        Border border = BorderFactory.createLineBorder(textColor , 3) ; 
+        Border border = BorderFactory.createLineBorder(textColor , 3) ; // Maing Borer 
 
         JLabel label = new JLabel(); // Create A Label
         label.setText("Bro, Do You Even CCSIT?"); // Set Text For The Label
