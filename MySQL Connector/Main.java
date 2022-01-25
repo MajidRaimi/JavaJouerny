@@ -8,7 +8,7 @@ public class Main {
 
         clearScreen();
         String username = "root";
-        String password = "12341234";
+        String password = "1234";
         String databaseName = "javatest";
         String url = "jdbc:mysql://localhost:3306/" + databaseName;
 
@@ -22,6 +22,7 @@ public class Main {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(url, username, password);
+            System.out.println("Working");
             statement = connection.createStatement();
 
             resultSet = statement.executeQuery("select * from Students ;");
