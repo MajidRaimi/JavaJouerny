@@ -53,10 +53,6 @@ public class Main {
                 reader.close();
             }
 
-            // System.out.println(
-            // responseContent.toString()
-            // );
-
             JSONObject jsonObj = new JSONObject(responseContent.toString());
 
             String lat = jsonObj.getJSONObject("coord").get("lat").toString();
@@ -70,10 +66,6 @@ public class Main {
             JSONObject jsonMain = new JSONObject(main);
 
             main = jsonMain.get("description").toString();
-
-            // System.out.println(
-            // lat + " " + lon + " " + main
-            // );
 
             int tempNum = (int) Math.round(Double.parseDouble(temp));
 
@@ -92,7 +84,5 @@ public class Main {
         }
 
     }
-
-    
 
 }
